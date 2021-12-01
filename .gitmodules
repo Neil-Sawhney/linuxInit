@@ -1,3 +1,6 @@
 [submodule "vimFiles"]
 	path = vimFiles
 	url = git@github.com:neil-sawhney/vimFiles.git
+[submodule "homeDirectoryFiles/vimFiles"]
+	path = homeDirectoryFiles/vimFiles
+	url = git@github.com:neil-sawhney/vimFiles.git
