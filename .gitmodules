@@ -1,0 +1,3 @@
+[submodule "vimFiles"]
+	path = vimFiles
+	url = git@github.com:neil-sawhney/vimFiles.git
