@@ -4,6 +4,7 @@ sudo apt-get install build-essential
 sudo apt install nodejs -y
 sudo apt install npm -y
 sudo apt install curl
+sudo apt install gdb -y
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
 eval "$(ssh-agent -s)"
