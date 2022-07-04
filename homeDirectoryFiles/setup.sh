@@ -1,4 +1,7 @@
 #!/bin/sh
+sudo apt-get update && sudo apt-get dist-upgrade -y
+sudo apt-get install build-essential
+
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 
@@ -9,4 +12,8 @@ cp -r vimFiles/.vim vimFiles/.vimrc ~/
 git config --global user.email "Neil@neil-sawhney.com"
 git config --global user.name "Neil Sawhney"
 
+sudo apt install zsh -y
+sudo apt install git-core curl fonts-powerline -y
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+sudo reboot now
