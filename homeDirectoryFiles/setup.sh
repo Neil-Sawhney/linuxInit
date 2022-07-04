@@ -3,6 +3,8 @@ sudo apt-get update && sudo apt-get dist-upgrade -y
 sudo apt-get install build-essential
 sudo apt install nodejs -y
 sudo apt install npm -y
+sudo apt install curl
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
