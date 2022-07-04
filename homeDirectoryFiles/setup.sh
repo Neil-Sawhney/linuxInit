@@ -1,6 +1,8 @@
 #!/bin/sh
 sudo apt-get update && sudo apt-get dist-upgrade -y
 sudo apt-get install build-essential
+sudo apt install nodejs -y
+sudo apt install npm -y
 
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
