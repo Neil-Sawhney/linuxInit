@@ -7,6 +7,7 @@ sudo apt install curl
 sudo apt install gdb -y
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 sudo apt install libheif-examples -y
+sudo apt install imagemagick -y
 
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
