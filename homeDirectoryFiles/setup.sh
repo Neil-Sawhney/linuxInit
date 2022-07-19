@@ -18,6 +18,7 @@ cp -r vimFiles/.vim vimFiles/.vimrc ~/
 
 git config --global user.email "Neil@neil-sawhney.com"
 git config --global user.name "Neil Sawhney"
+git config --global core.editor vim
 
 sudo apt install zsh -y
 sudo apt install git-core curl fonts-powerline -y
