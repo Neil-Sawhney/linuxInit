@@ -1,6 +1,6 @@
 #!/bin/sh
 sudo apt-get update && sudo apt-get dist-upgrade -y
-sudo apt-get install build-essential
+sudo apt-get install build-essential -y
 sudo apt install nodejs -y
 sudo apt install npm -y
 sudo apt install curl
@@ -8,10 +8,16 @@ sudo apt install gdb -y
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 sudo apt install libheif-examples -y
 sudo apt install imagemagick -y
+sudo apt install ffmpeg -y
 
+ssh-keygen -t ed25519 -C "Neil@neil-sawhney.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 
+cat ~/.ssh/id_ed25519.pub
+sleep 30
+
+git remote set-url origin git@github.com:Neil-Sawhney/linuxInit.git
 
 git submodule update --init --recursive
 cp -r vimFiles/.vim vimFiles/.vimrc ~/
