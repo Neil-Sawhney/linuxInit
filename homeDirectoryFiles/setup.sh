@@ -10,21 +10,13 @@ sudo apt install libheif-examples -y
 sudo apt install imagemagick -y
 sudo apt install ffmpeg -y
 
-ssh-keygen -t ed25519 -C "Neil@neil-sawhney.com"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-
-cat ~/.ssh/id_ed25519.pub
-sleep 30
-
-git remote set-url origin git@github.com:Neil-Sawhney/linuxInit.git
-
 git submodule update --init --recursive
 cp -r vimFiles/.vim vimFiles/.vimrc ~/
 
 git config --global user.email "Neil@neil-sawhney.com"
 git config --global user.name "Neil Sawhney"
 git config --global core.editor vim
+bindkey -v
 
 sudo apt install zsh -y
 sudo apt install git-core curl fonts-powerline -y
