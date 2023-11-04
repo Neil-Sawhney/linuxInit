@@ -10,16 +10,17 @@ sudo apt install libheif-examples -y
 sudo apt install imagemagick -y
 sudo apt install ffmpeg -y
 
-git submodule update --init --recursive
 cp -r vimFiles/.vim vimFiles/.vimrc ~/
 
 git config --global user.email "Neil@neil-sawhney.com"
 git config --global user.name "Neil Sawhney"
 git config --global core.editor vim
-bindkey -v
 
 sudo apt install zsh -y
 sudo apt install git-core curl fonts-powerline -y
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+echo "bindkey -v" >> ~/.zshrc
 sudo reboot now
